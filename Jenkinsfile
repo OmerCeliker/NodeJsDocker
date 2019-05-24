@@ -5,7 +5,6 @@ pipeline {
       steps {
         sh '''echo "NodeJsDocker" pipeline
 '''
-        build 'MvnBuildJob'
       }
     }
     stage('Sonar Analysis') {
