@@ -4,6 +4,7 @@ pipeline {
     stage('Build App') {
       steps {
         sh '''echo "NodeJsDocker" pipeline
+docker -version
 '''
       }
     }
