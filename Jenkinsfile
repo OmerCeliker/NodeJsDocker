@@ -33,22 +33,17 @@ pipeline {
       }
     }
     stage('Build Docker Image') {
-     
-              agent {
-            docker {
-                image 'maven:3.3.3-jdk-8'
-                label 'my-defined-label'
-                args  '-v /data:/data'
-            }
+      agent {
+        docker {
+          image 'maven:3.3.3-jdk-8'
+          label 'my-defined-label'
+          args '-v /data:/data'
         }
-      
-      
-       steps {
+
+      }
+      steps {
         sh 'mvn -version'
       }
-      
-      
-      
     }
     stage('Test Docker Image') {
       steps {
