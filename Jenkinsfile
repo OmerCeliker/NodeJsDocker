@@ -4,7 +4,7 @@ pipeline {
     stage('Build App') {
       steps {
         sh '''echo "NodeJsDocker" pipeline
-mvn -version'''
+'''
       }
     }
     stage('Sonar Analysis') {
