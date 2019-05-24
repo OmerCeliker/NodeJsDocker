@@ -1,15 +1,5 @@
 pipeline {
-  agent {
-    node{
-      docker.image('maven:3.3.3-jdk-8').inside('-v /data:/data' {
-        stage 'sonar analysis ' 
-        sh 'mvn -version'
-        
-      }
-                                               )
-    }
 
-  }
   stages {
     stage('Build App') {
       steps {
