@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('Identity') {
       steps {
         sh 'echo "NodeJsDocker" pipeline'
       }
