@@ -6,7 +6,7 @@
 Excute the below command from the root directory to create the docker image.
 
 ```
-$ docker build -t abhishekjv/nodejs-hw .
+$ docker build -t ocel12356/nodejs-helloworld .
 ```
 Note: With ``` -t ``` tag, I have specified the name of the image which also contains the name of my Docker hub ID. This is one of the best practice to follow when tagging images. 
 
@@ -18,7 +18,7 @@ docker run -p 3000:3000 IMAGE-ID
 
 ## Push the image to docker hub
 ```
-docker push abhishekjv/nodejs-hw
+docker push ocel12356/nodejs-helloworld
 ```
 
 ## Create a pod in Kubernetes
