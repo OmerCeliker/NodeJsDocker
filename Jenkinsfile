@@ -1,6 +1,5 @@
 pipeline {
-agent none
-  
+  agent none
   stages {
     stage('Build App') {
       steps {
