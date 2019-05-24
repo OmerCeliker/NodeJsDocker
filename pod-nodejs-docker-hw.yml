@@ -1,0 +1,13 @@
+#https://github.com/abhishekjawali/nodejs-docker-hw/blob/master/pod-nodejs-docker-hw.yml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nodejs-docker-hw
+  labels:
+    app: nodejs-docker-hw
+spec:
+  containers:
+  - name: k8s-demo
+    image: ocel12356/nodejs-helloworld
+    ports:
+    - containerPort: 3000
