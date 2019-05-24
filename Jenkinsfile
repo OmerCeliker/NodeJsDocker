@@ -36,7 +36,6 @@ pipeline {
       agent {
         docker {
           image 'maven:3.3.3-jdk-8'
-          label 'my-defined-label'
           args '-v /data:/data'
         }
 
