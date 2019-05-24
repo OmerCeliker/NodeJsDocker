@@ -1,7 +1,12 @@
 pipeline {
   agent {
-    node {
-      label 'docker'
+    node ('docker'){
+      docker.image('maven:3.3.3-jdk-8').inside('-v /data:/data' {
+        stage 'sonar analysis ' 
+        sh 'mvn -version'
+        
+      }
+                                               )
     }
 
   }
